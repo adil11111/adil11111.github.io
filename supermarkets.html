@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<!--
+  Spatial by TEMPLATED
+  templated.co @templatedco
+  Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>Supermarkets</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header id="header">
+      <h1><strong><a href="index.html">Nutritional Necessities</a></strong></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="problem.html">The Problem</a></li>
+          <li><a href="supermarkets.html">Find Supermarkets</a></li>
+          <li><a href="recipes.html">Find Recipes</a></li>
+          <li><a href="rooftop-gardens.html">Rooftop Gardens</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <section id="main" class="wrapper">
+      <div class="container">
+
+        <header class="major special">
+          <center>
+            <h2>Supermarkets</h2>
+          </center>
+        </header>
+
+        <div class="row">
+          <div id="map" class="embedded-thing"></div>
+        </div>
+
+        <br>
+        <center>
+          <p>Click on a supermarket below to zoom in on the map.</p>
+        </center>
+
+        <h3>Manhattan</h3>
+        <div class="row">
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(0)">
+            <h4>Hitham Supermarket</h4>
+            <p>
+              Harlem <br>
+              352 W 116th St, New York, NY 10026
+            </p>
+          </div>
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(1)">
+            <h4>Tan Tin-Hung Supermarket</h4>
+            <p>
+              Lower East Side <br>
+              121 Bowery, New York, NY 10002
+            </p>
+          </div>
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(2)">
+            <h4>Stiles Farmers Market</h4>
+            <p>
+              352 W 53nd St New York, NY, 10019
+            </p>
+          </div>
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(3)">
+            <h4>Hong Kong Supermarket</h4>
+            <p>
+              157 Hester St, New York, NY 10013
+            </p>
+          </div>
+        </div>
+
+        <h3>Brooklyn</h3>
+        <div class="row">
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(4)">
+            <h4>Point View Deli</h4>
+            <p>
+              225 Greenpoint Avenue, Brooklyn, NY 11222
+            </p>
+          </div>
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(5)">
+            <h4>Key Food</h4>
+            <p>
+            244 McGuinness Blvd, Brooklyn, NY 11222
+            </p>
+          </div>
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(6)">
+            <h4>KRM Kollel Supermarket</h4>
+            <p>
+            1325 39th St, Brooklyn, NY 11218
+            </p>
+          </div>
+        </div>
+
+        <h3>Queens</h3>
+        <div class="row">
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(7)">
+            <h4>Food Bazaar Supermarket</h4>
+            <p>
+            42-02 Northern Blvd, Queens, NY 11101
+            </p>
+          </div>
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(8)">
+            <h4>National Wholesale Liquidators</h4>
+            <p>
+            3500 48th St, Long Island City, NY 11101
+            </p>
+          </div>
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(9)">
+            <h4>Dollar Tree</h4>
+            <p>
+            63-14 Queens Blvd, Woodside, NY 11377
+            </p>
+          </div>
+        </div>
+
+        <h3>Bronx</h3>
+        <div class="row">
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(10)">
+            <h4>Aldi</h4>
+            <p>
+            517 E 117th St, New York, NY 10035
+            </p>
+          </div>
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(11)">
+            <h4>Foodtown</h4>
+            <p>
+            Washington Heights <br>
+            600 W 160th St, New York, NY 10032
+            </p>
+          </div>
+          <div class="4u 12u$(medium) supermarket" onclick="focusOn(12)">
+            <h4>Kingsbridge-Riverdale Farmer's Market</h4>
+            <p>
+            Kingsbridge <br>
+            260 W 231st St, Bronx, NY 10463
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <img width="600px" src="./images/mist-ny.jpeg" alt="" />
+        <p>Made for the purposes of MIST Community Service 2018 &copy;</p>
+      </div>
+    </footer>
+
+    <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5URvaZcxj1ZKYBUkQOhNikXG29fj3YKQ&callback=initMap" async defer></script>
+    <script src="assets/js/supermarkets.js"></script>
+
+  </body>
+</html>
+
+
